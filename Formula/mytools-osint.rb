@@ -15,7 +15,7 @@ class MytoolsOsint < Formula
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
-      sha256 "REPLACE_WITH_ACTUAL_ARM64_SHA256_AFTER_RELEASE"
+      sha256 "3147932fe14826e5af58ed2abee0f2a1286a1ba54146a90e81036f6be9c6648a"
     end
     on_intel do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-x86_64"
@@ -25,7 +25,7 @@ class MytoolsOsint < Formula
 
   on_linux do
     url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
-    sha256 "REPLACE_WITH_ACTUAL_LINUX_SHA256_AFTER_RELEASE"
+    sha256 "cd76e63e7fc1983800e126203b236c1a4071985a6ffd3a228513ef134e2544fa"
   end
 
   def install
