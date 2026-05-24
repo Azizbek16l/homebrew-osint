@@ -7,23 +7,20 @@
 # This formula installs the CLI only (`osint` command). For the GUI, install
 # the .pkg / .dmg directly from the GitHub release page.
 class MytoolsOsint < Formula
-  desc "Bluetm OSINT CLI — 24 free-source modules, red-team profiles, TUI, HTML reports"
+  desc "Bluetm OSINT CLI — 32 free-source modules, red-team profiles, TUI, web dashboard, HTML reports"
   homepage "https://github.com/Azizbek16l/mytools-osint"
   version "0.3.1"
   license "MIT"
 
-  # Note: macOS Intel binary not yet shipped in v0.2.0 (release CI runner queue
-  # timed out on macos-13). Intel users: `pipx install mytools-osint==0.2.0`
+  # Note: only macOS arm64 binary ships in v0.3.1. macOS Intel + Linux users:
+  #   `pipx install mytools-osint==0.3.1`
+  # Linux binary will land once the release CI workflow `shasum` fix ships
+  # (blocked on a workflow-scope token refresh).
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
       sha256 "94b1711e17fa17d651f4f1ded10a7d1ca65ad65ce0169a662a1cc6247c8da348"
     end
-  end
-
-  on_linux do
-    url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
-    sha256 "fa60c0d393fd20201fdef2250d3098fd5a1ebaf9920acc35784f944965ce4dc4"
   end
 
   def install
