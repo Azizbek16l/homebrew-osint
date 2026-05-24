@@ -17,7 +17,7 @@ class MytoolsOsint < Formula
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
-      sha256 "410e0047bb4b1de1cee0c5bc401b0f323d56b6c019f8959fdcf0d35633fd8ec0"
+      sha256 "94b1711e17fa17d651f4f1ded10a7d1ca65ad65ce0169a662a1cc6247c8da348"
     end
   end
 
