@@ -12,14 +12,12 @@ class MytoolsOsint < Formula
   version "0.2.0"
   license "MIT"
 
+  # Note: macOS Intel binary not yet shipped in v0.2.0 (release CI runner queue
+  # timed out on macos-13). Intel users: `pipx install mytools-osint==0.2.0`
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
       sha256 "3147932fe14826e5af58ed2abee0f2a1286a1ba54146a90e81036f6be9c6648a"
-    end
-    on_intel do
-      url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-x86_64"
-      sha256 "REPLACE_WITH_ACTUAL_INTEL_SHA256_AFTER_RELEASE"
     end
   end
 
