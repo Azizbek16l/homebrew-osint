@@ -12,15 +12,18 @@ class MytoolsOsint < Formula
   version "0.3.1"
   license "MIT"
 
-  # Note: only macOS arm64 binary ships in v0.3.1. macOS Intel + Linux users:
+  # Note: macOS Intel binary not in v0.3.1 (CI runner queue >6h). Intel users:
   #   `pipx install mytools-osint==0.3.1`
-  # Linux binary will land once the release CI workflow `shasum` fix ships
-  # (blocked on a workflow-scope token refresh).
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
       sha256 "94b1711e17fa17d651f4f1ded10a7d1ca65ad65ce0169a662a1cc6247c8da348"
     end
+  end
+
+  on_linux do
+    url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
+    sha256 "80d87054f4ab481d62ed961f2fb8952e953637bed095f8a4a15564a5e7616555"
   end
 
   def install
