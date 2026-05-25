@@ -22,6 +22,11 @@ class MytoolsOsint < Formula
     end
   end
 
+  on_linux do
+    url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
+    sha256 "ace6786aee88a66e1fce2baad4cd708317ee8bad1954688f3b217d8b98b6b73e"
+  end
+
   def install
     bin.install Dir["osint-*"].first => "osint"
   end
