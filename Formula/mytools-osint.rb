@@ -21,11 +21,9 @@ class MytoolsOsint < Formula
     end
   end
 
-  # Linux binary still on v4.1.0 in the v4.1.1 release; will be rebuilt by CI.
-  # For now, pin the Linux URL to the v4.1.0 binary so `brew install` still works.
   on_linux do
-    url "https://github.com/Azizbek16l/mytools-osint/releases/download/v4.1.0/osint-linux-x86_64"
-    sha256 "5d1d8c081d196a2d7a393b52c5e8a24341233ae0f2f20fe1c1d778570188d2fc"
+    url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
+    sha256 "b4e004383a087fa99d35359fae45c6b3327cf7e62eb332dd11c804bd6560d457"
   end
 
   def install
