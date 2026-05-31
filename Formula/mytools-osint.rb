@@ -9,20 +9,20 @@
 class MytoolsOsint < Formula
   desc "Bluetm OSINT CLI v4.3 — chat shell, 7 themes, 45 modules, free APIs"
   homepage "https://github.com/Azizbek16l/mytools-osint"
-  version "4.3.1"
+  version "4.3.2"
   license "MIT"
 
-  # macOS Intel binary not in v4.3.1 (CI macos-13 leg not built this release).
+  # macOS Intel binary not in v4.3.2 (CI macos-13 leg not built this release).
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
-      sha256 "6aad6e75e536823efef532ec873ce474bf776ba2692a09977717c3befd2f235a"
+      sha256 "076453ab52a6ac4937c35966f8ecaa335ddbff830646c65a93cce04116786f67"
     end
   end
 
   on_linux do
     url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
-    sha256 "a48e5f56f27816e20c3218df66ca88bd8115d3256ebecf50100dd1ec851cdf4a"
+    sha256 "200f1796c2885c0754e00e2fcdf6cc48d5356c133ad919a61675ec229a6f9c78"
   end
 
   def install
