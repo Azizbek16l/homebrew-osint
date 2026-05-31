@@ -7,7 +7,7 @@
 # This formula installs the CLI only (`osint` command). For the GUI, install
 # the .pkg / .dmg directly from the GitHub release page.
 class MytoolsOsint < Formula
-  desc "Bluetm OSINT CLI v4.3 — chat shell, 7 themes, 45 modules, free APIs"
+  desc "Bluetm OSINT CLI v4.3 — chat shell, 7 themes, 47 modules, free APIs"
   homepage "https://github.com/Azizbek16l/mytools-osint"
   version "4.3.2"
   license "MIT"
