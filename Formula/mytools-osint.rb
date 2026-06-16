@@ -7,16 +7,16 @@
 # This formula installs the CLI only (`osint` command). For the GUI, install
 # the .pkg / .dmg directly from the GitHub release page.
 class MytoolsOsint < Formula
-  desc "Bluetm OSINT CLI v4.3 — chat shell, 7 themes, 47 modules, free APIs"
+  desc "Bluetm OSINT CLI — chat shell, 7 themes, 51 modules, 1,008 sites, free APIs"
   homepage "https://github.com/Azizbek16l/mytools-osint"
-  version "4.3.4"
+  version "4.3.5"
   license "MIT"
 
-  # macOS Intel binary not in v4.3.4 (CI macos-13 leg not built this release).
+  # macOS Intel (x86_64) binary not shipped this release (CI macos-13 leg).
   on_macos do
     on_arm do
       url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-macos-arm64"
-      sha256 "52b9a345c70b5eb29f65946a3723f55613b790f7643149fc99d44a13898c9028"
+      sha256 "ebce8cd76ed5cc3b96ac4d7059fafd75168613faff9334a8a3e535d80db2c2a8"
     end
   end
 
