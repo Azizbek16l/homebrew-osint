@@ -22,7 +22,7 @@ class MytoolsOsint < Formula
 
   on_linux do
     url "https://github.com/Azizbek16l/mytools-osint/releases/download/v#{version}/osint-linux-x86_64"
-    sha256 "ce87e0b187a0075a9a265aaa659925ff3f6d1e0221698548164bbc3de775c5e5"
+    sha256 "b7fa6f144c4c1d198682b75a26ab3638dfa7b48663643b06b0bb31740b20eb70"
   end
 
   def install
